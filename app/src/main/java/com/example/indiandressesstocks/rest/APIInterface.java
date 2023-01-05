@@ -1,6 +1,7 @@
 package com.example.indiandressesstocks.rest;
 
 import com.example.indiandressesstocks.model.ItemsObject;
+import com.google.gson.JsonObject;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -8,7 +9,7 @@ import retrofit2.http.GET;
 public interface APIInterface {
 
     @GET("1dUu0Ggb09eCV5kuaUS6iIHb_jSX19O0qA7CtkMqMJwo/values/Sheet1?key=AIzaSyAZ4ReIxkuA4jtDQzulRSnwwPpATtO4F_A")
-    Call<ItemsObject> getItem();
+    Call<JsonObject> getItem();
 
 //    @POST("/api/users")
 //    Call<User> createUser(@Body User user);
